@@ -92,10 +92,9 @@ jobs:
         julia_version:
         - "1"
         include:
-          # MPICH with MPI ABI is broken on i686: <https://github.com/pmodels/mpich/issues/7770>.
-          # - julia_arch: "x86"
-          #   os: "ubuntu-24.04"
-          #   julia_version: "1"
+          - julia_arch: "x86"
+            os: "ubuntu-24.04"
+            julia_version: "1"
           - julia_arch: "default"
             os: "ubuntu-24.04"
             julia_version: "min"
